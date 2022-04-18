@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './screens/Home';
-import Product from './screens/Product';
+import ProductDetail from './screens/ProductDetail';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Container>
             <Routes>
               <Route path='/' element={<Home/>} index />
-              <Route path='/product/:id' element={<Product/>} />
+              <Route path='/product/:id' element={<ProductDetail/>} />
             </Routes>
           </Container>
         </main>
